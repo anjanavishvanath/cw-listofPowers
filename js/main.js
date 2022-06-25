@@ -1,11 +1,8 @@
-function power(num){
-    let arr = []
-    for(let i=0;i<=num;i++){
-        arr.push(Math.pow(2,i))
-    }
-    return arr
-}
+function powersOfTwo(n) {
+    return Array.from({length: n + 1}, (v, k) => 2 ** k);
+  }
 
 
-let powOfTwo = power(4)
+
+let powOfTwo = powersOfTwo(4)
 console.log(powOfTwo)
